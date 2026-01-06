@@ -30,7 +30,14 @@ const SERVICES_DATA = [
     title: "Gestão de Crise",
     text: "Mediação de conflitos societários e estratégias para contenção de danos à imagem. Resolução fora dos tribunais.",
     isSpecial: false
-  }
+  },
+  {
+  id: "trabalhista",
+  Icon: Gavel,
+  title: "Trabalhista",
+  text: "Assessoria estratégica nas relações de trabalho. Prevenção de passivos e defesa vigorosa em reclamações trabalhistas.",
+  isSpecial: false
+}
 ];
 
 const ServiceCard = ({ Icon, title, text, isSpecial, link }) => (

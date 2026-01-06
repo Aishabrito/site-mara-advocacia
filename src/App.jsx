@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Compliance from './pages/compliance';
 import Criminal from './pages/criminal';
 import GestaoCrise from './pages/gestaocrise';
+import Trabalhista from './pages/trabalhista';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,6 +34,7 @@ function App() {
           <Route path="/atuacao/compliance" element={<Compliance />} />
           <Route path="/atuacao/criminal" element={<Criminal />} />
           <Route path="/atuacao/gestao-de-crise" element={<GestaoCrise />} />
+          <Route path="/atuacao/trabalhista" element={<Trabalhista />} />
         </Routes>
 
         <Footer />
