@@ -4,7 +4,11 @@ import logoHeader from '../assets/logo-header.png';
 const Footer = () => {
   // Link direto do seu WhatsApp
   const whatsappLink = "https://wa.me/message/WOS4P7PPUHEYB1";
-
+const ContactItem = ({ text }) => (
+  <p className="flex items-center gap-3 font-sans">
+    <span className="w-1.5 h-1.5 bg-secondary rounded-full"></span> {text}
+  </p>
+);
   return (
     <footer id="contato" className="bg-primary border-t border-white/5 pt-24 pb-12">
       <div className="container mx-auto px-6">
@@ -28,6 +32,7 @@ const Footer = () => {
                  <ContactItem text="advmaraabreu@gmail.com" />
                  {/* Telefone Atualizado */}
                  <ContactItem text="(21) 96675-6441" />
+                 <ContactItem text="@advmaraabreu" />
                  <ContactItem text="Rio de Janeiro - RJ" />
               </div>
            </div>
@@ -58,11 +63,6 @@ const Footer = () => {
   );
 };
 
-// Componente interno para itens de contato
-const ContactItem = ({ text }) => (
-  <p className="flex items-center gap-3 font-sans">
-    <span className="w-1.5 h-1.5 bg-secondary rounded-full"></span> {text}
-  </p>
-);
+
 
 export default Footer;
