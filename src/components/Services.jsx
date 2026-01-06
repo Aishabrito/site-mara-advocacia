@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Shield, Scale, Users } from 'lucide-react';
+import { Shield, Scale, Users, Gavel } from 'lucide-react';
 
-// Configurações de dados externas para facilitar manutenção e limpeza do componente
 const STATS_DATA = [
   { number: "+10", label: "Anos de Experiência" },
   { number: "267.966", label: "Inscrição OAB/RJ" },
@@ -32,12 +31,12 @@ const SERVICES_DATA = [
     isSpecial: false
   },
   {
-  id: "trabalhista",
-  Icon: Gavel,
-  title: "Trabalhista",
-  text: "Assessoria estratégica nas relações de trabalho. Prevenção de passivos e defesa vigorosa em reclamações trabalhistas.",
-  isSpecial: false
-}
+    id: "trabalhista",
+    Icon: Gavel, 
+    title: "Trabalhista",
+    text: "Assessoria estratégica nas relações de trabalho. Prevenção de passivos e defesa vigorosa em reclamações trabalhistas.",
+    isSpecial: false
+  }
 ];
 
 const ServiceCard = ({ Icon, title, text, isSpecial, link }) => (
@@ -72,7 +71,6 @@ const ServiceCard = ({ Icon, title, text, isSpecial, link }) => (
 const Services = () => {
   return (
     <>
-      {/* Seção de Estatísticas */}
       <div className="bg-surface border-y border-white/5 py-16">
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
           {STATS_DATA.map((stat, idx) => (
@@ -88,7 +86,6 @@ const Services = () => {
         </div>
       </div>
 
-      {/* Seção de Áreas de Atuação */}
       <section id="atuacao" className="py-32 bg-[#161616]">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-end mb-20 border-b border-white/10 pb-10">
@@ -105,7 +102,8 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Ajustado para grid-cols-2 em telas médias para acomodar 4 itens de forma simétrica */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {SERVICES_DATA.map((service) => (
               <ServiceCard 
                 key={service.id}
