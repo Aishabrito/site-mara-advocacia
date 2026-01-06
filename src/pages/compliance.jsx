@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Shield, ArrowLeft, CheckCircle2 } from 'lucide-react';
 
 const Compliance = () => {
-  // Lista de tópicos baseada no seu texto para criar um visual mais limpo
+  // Lista de tópicos 
   const topicos = [
     "Códigos de Conduta e Políticas Internas",
     "Due Diligence de Terceiros",
@@ -27,11 +27,8 @@ const Compliance = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           
-          {/* Coluna da Esquerda: Título e Ícone */}
+          {/* Coluna da Esquerda: Título*/}
           <div className="lg:col-span-5">
-            <div className="inline-block p-4 bg-surface border border-white/5 mb-8">
-              <Shield className="text-secondary" size={48} strokeWidth={1} />
-            </div>
             <h1 className="text-5xl md:text-6xl font-serif text-white mb-6">Compliance</h1>
             <p className="text-secondary text-lg font-medium leading-relaxed italic border-l-2 border-secondary pl-6">
               "Implementação de programas de integridade robustos. Proteja a reputação da sua marca contra escândalos e multas."

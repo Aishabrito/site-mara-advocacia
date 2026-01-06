@@ -14,9 +14,6 @@ const Imoveis = () => {
         </Link>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           <div className="lg:col-span-5">
-            <div className="inline-block p-4 bg-surface border border-white/5 mb-8">
-              <Building2 className="text-secondary" size={48} strokeWidth={1} />
-            </div>
             <h1 className="text-5xl md:text-6xl font-serif text-white mb-6">Gestão de Imóveis</h1>
             <p className="text-secondary text-lg font-medium italic border-l-2 border-secondary pl-6">
               "Gestão patrimonial com segurança jurídica. Administração de locações e proteção do seu ativo imobiliário."

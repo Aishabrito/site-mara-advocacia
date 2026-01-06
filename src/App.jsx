@@ -1,15 +1,22 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Componentes Globais
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Hero from './components/HeroSection';
 import Services from './components/Services';
 import About from './components/About';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
+
+// Páginas de Detalhes
 import Compliance from './pages/compliance';
 import Criminal from './pages/criminal';
 import GestaoCrise from './pages/gestaocrise';
 import Trabalhista from './pages/trabalhista';
+import Consumidor from './pages/consumidor';
+import Militar from './pages/militar';
+import Imoveis from './pages/imoveis';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +27,7 @@ function App() {
         <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         
         <Routes>
-          {/* Rota Principal (Home) */}
+          {/* Home Page */}
           <Route path="/" element={
             <>
               <Hero />
@@ -30,11 +37,14 @@ function App() {
             </>
           } />
 
-          {/* Rotas das Páginas Individuais */}
+          {/* Rotas das Áreas de Atuação */}
           <Route path="/atuacao/compliance" element={<Compliance />} />
           <Route path="/atuacao/criminal" element={<Criminal />} />
           <Route path="/atuacao/gestao-de-crise" element={<GestaoCrise />} />
           <Route path="/atuacao/trabalhista" element={<Trabalhista />} />
+          <Route path="/atuacao/consumidor" element={<Consumidor />} />
+          <Route path="/atuacao/militar" element={<Militar />} />
+          <Route path="/atuacao/administracao-de-imoveis" element={<Imoveis />} />
         </Routes>
 
         <Footer />

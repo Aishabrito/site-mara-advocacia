@@ -28,9 +28,7 @@ const Trabalhista = () => {
           
           {/* Coluna de Identidade Visual */}
           <div className="lg:col-span-5">
-            <div className="inline-block p-4 bg-surface border border-white/5 mb-8">
-              <Gavel className="text-secondary" size={48} strokeWidth={1} />
-            </div>
+            
             <h1 className="text-5xl md:text-6xl font-serif text-white mb-6">Direito Trabalhista</h1>
             <p className="text-secondary text-lg font-medium leading-relaxed italic border-l-2 border-secondary pl-6">
               "Assessoria estratégica nas relações de trabalho. Prevenção de passivos e defesa vigorosa em reclamações trabalhistas."
