@@ -22,7 +22,7 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <Router>
+    <Router> <ScrollToTop /> 
       <div className="min-h-screen bg-primary text-gray-200 font-sans selection:bg-secondary selection:text-primary">
         <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         
